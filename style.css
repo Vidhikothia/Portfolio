@@ -569,7 +569,7 @@ html {
   color: #0066cc;
   padding: 6px 14px;
   border-radius: 999px;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -668,14 +668,14 @@ html {
   display: inline-block;
   margin: 0.5rem 1rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #333;
   transition: color 0.3s ease;
 }
 
 .contact-links a i {
   margin-right: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   vertical-align: middle;
 }
 
@@ -760,8 +760,8 @@ html {
 }
 
 .skill-category h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 8px;
   color: #3366ff;
   text-align: left;
 }
@@ -770,7 +770,7 @@ html {
   background-color: #f1f5ff;
   padding: 8px 15px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 12px;
   text-align: left;
 }
 }
