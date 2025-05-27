@@ -1,0 +1,537 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4ff;
+  color: #1a1a1a;
+}
+
+html {
+  font-size: 16px;
+  /* default */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Ensures it stays above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.scroll-rocket {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  font-size: 30px;
+  cursor: pointer;
+  transform: rotate(135deg); /* facing down */
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.scroll-rocket.up {
+  transform: rotate(-45deg); /* facing up */
+}
+
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.hero-text {
+  max-width: 800px;
+  text-align: left;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e0f0ff;
+  color: #0066cc;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.hero h2 span {
+  color: #3366ff;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.view-work {
+  background-color: #3366ff;
+  color: white;
+}
+
+.download-resume {
+  background-color: #3366ff;
+  color: white;
+}
+
+.contact {
+  color: #3366ff;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.stats div span {
+  display: block;
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.hero-image {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #4d9cff, #a270f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-left: 40px;
+  animation: float 6s ease-in-out infinite, morph 8s ease-in-out infinite;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Morphing fluid shape */
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 55% 45% / 60% 45% 55% 40%;
+  }
+  25% {
+    border-radius: 50% 40% 60% 50% / 55% 60% 40% 50%;
+  }
+  50% {
+    border-radius: 60% 50% 45% 55% / 50% 60% 40% 60%;
+  }
+  75% {
+    border-radius: 55% 60% 50% 45% / 60% 55% 50% 40%;
+  }
+  100% {
+    border-radius: 40% 60% 55% 45% / 60% 45% 55% 40%;
+  }
+}
+
+/* Floating gently */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: morph 8s ease-in-out infinite;
+  /* same morph animation on image */
+  /* remove border-radius: 50% so it morphs with the container */
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 1;
+  pointer-events: none; /* optional: so it doesn't interfere with interactions */
+}
+
+
+.about {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  color: #1a1a1a;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3366ff;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.about-details div {
+  flex: 1 1 45%;
+  /* Changed from flex: 1 */
+  min-width: 300px;
+  /* Increased from 250px */
+  background-color: #f5f9ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.about-details h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.projects {
+  background-color: #f0f4ff;
+  padding: 60px 40px;
+  color: #1a1a1a;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects h3 {
+  font-size: 32px;
+  color: #3366ff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  color: #3366ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skills {
+  background-color: #f0f4ff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+}
+
+.skill-category h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3366ff;
+  text-align: left;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-category ul li {
+  background-color: #f1f5ff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.timeline-section {
+  background-color: #fcfdff;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.timeline-section h3 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 50px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+  border-left: 3px solid #3366ff;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.timeline-item::before {
+  content: none;
+  /* Removes the circular marker */
+}
+
+.timeline-header {
+  margin-bottom: 10px;
+}
+
+.timeline-header h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #3366ff;
+  font-weight: 600;
+}
+
+.timeline-header .org {
+  display: block;
+  font-size: 15px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.timeline-header .date {
+  font-size: 14px;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.timeline-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+.contact {
+  background-color: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact-links a i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.contact-links a:hover {
+  color: #0073b1;
+  /* or any color you prefer */
+}
+
+#hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    /* Hide nav by default on small screens */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    /* just below header */
+    right: 40px;
+    width: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1001;
+  }
+
+  nav.show {
+    display: flex;
+    /* Show nav when toggled */
+  }
+
+  nav a {
+    margin: 12px 20px;
+  }
+
+  #hamburger {
+    display: block;
+    /* Show hamburger on small screens */
+  }
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+}
