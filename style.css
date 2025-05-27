@@ -674,21 +674,21 @@ html {
   display: inline-block;
   margin: 0.5rem 1rem;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #333;
   transition: color 0.3s ease;
 }
 
 .contact-links a i {
   margin-right: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   vertical-align: middle;
 }
 
 .scroll-rocket {
   position: fixed;
-  right: 20px;
-  bottom: 80px;
+  right: 15px;
+  bottom: 50px;
   font-size: 20px;
   cursor: pointer;
   transform: rotate(135deg); /* Face down by default */
