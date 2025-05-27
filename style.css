@@ -164,11 +164,15 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  margin-left: 40px;
+  margin-left: 30px;
   animation: float 6s ease-in-out infinite, morph 8s ease-in-out infinite;
   overflow: hidden;
   position: relative;
+
+  /* Enhanced shadow */
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.1),     /* soft base shadow */
+    0 12px 40px rgba(77, 156, 255, 0.3); /* accent glow matching the gradient */
 }
 
 /* Morphing fluid shape */
