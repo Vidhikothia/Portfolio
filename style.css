@@ -18,16 +18,14 @@ html {
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
-
 
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  /* Ensures it stays above other content */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,17 +40,14 @@ header {
   bottom: 80px;
   font-size: 30px;
   cursor: pointer;
-  transform: rotate(135deg); /* facing down */
+  transform: rotate(135deg); 
   z-index: 1000;
   transition: transform 0.3s ease;
 }
 
 .scroll-rocket.up {
-  transform: rotate(-45deg); /* facing up */
+  transform: rotate(-45deg);
 }
-
-
-
 
 header h1 {
   margin: 0;
@@ -76,6 +71,7 @@ nav a {
 .hero-text {
   max-width: 800px;
   text-align: left;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -86,9 +82,10 @@ nav a {
 
 @media (max-width: 480px) {
   .hero-text {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
+
 
 .badge {
   display: inline-block;
@@ -112,7 +109,7 @@ nav a {
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 16px;
   color: #444;
   margin-bottom: 30px;
 }
@@ -144,19 +141,6 @@ nav a {
   color: #3366ff;
 }
 
-.stats {
-  display: flex;
-  gap: 40px;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.stats div span {
-  display: block;
-  font-size: 28px;
-  color: #1a1a1a;
-}
-
 .hero-image {
   width: 300px;
   height: 300px;
@@ -175,7 +159,7 @@ nav a {
     0 12px 40px rgba(77, 156, 255, 0.3); /* accent glow matching the gradient */
 }
 
-/* Morphing fluid shape */
+
 @keyframes morph {
   0% {
     border-radius: 40% 60% 55% 45% / 60% 45% 55% 40%;
@@ -194,7 +178,6 @@ nav a {
   }
 }
 
-/* Floating gently */
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -212,13 +195,14 @@ nav a {
   height: 100%;
   object-fit: cover;
   animation: morph 8s ease-in-out infinite;
-  /* same morph animation on image */
-  /* remove border-radius: 50% so it morphs with the container */
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
+  transform: translateX(-10px); /* shift 10px to the left */
   z-index: 1;
-  pointer-events: none; /* optional: so it doesn't interfere with interactions */
+  pointer-events: none;
 }
+
 
 
 .about {
@@ -559,7 +543,54 @@ html {
   }
 
   .hero-image {
-    margin-top: 10px;
-    padding-right: 20px;
+    margin-top: 20px;
+    padding-right: 10px;
+  }
+
+  .hero p {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e0f0ff;
+  color: #0066cc;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.view-work {
+  font-size: 8px;
+  background-color: #3366ff;
+  color: white;
+}
+
+.download-resume {
+    font-size: 8px;
+  background-color: #3366ff;
+  color: white;
+}
+
+.contact {
+    font-size: 8px;
+
+  color: #3366ff;
+}
+
+#hamburger {
+    display: block;
+    /* Show hamburger on small screens */
+    font-size: 12px;
   }
 }
