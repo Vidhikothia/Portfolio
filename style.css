@@ -149,7 +149,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 60px;
   animation: float 6s ease-in-out infinite, morph 8s ease-in-out infinite;
   overflow: hidden;
   position: relative;
@@ -535,6 +535,7 @@ html {
 
   .hero-image {
     margin-top: 30px;
+
   }
 }
 
@@ -546,7 +547,8 @@ html {
 
   .hero-image {
     margin-top: 20px;
-    padding-right: 10px;
+    margin-left: 10px;
+
   }
 
   .hero p {
