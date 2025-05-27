@@ -40,14 +40,15 @@ header {
   bottom: 80px;
   font-size: 30px;
   cursor: pointer;
-  transform: rotate(135deg); 
+  transform: rotate(135deg); /* Face down by default */
   z-index: 1000;
   transition: transform 0.3s ease;
 }
 
 .scroll-rocket.up {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* Face up when at bottom */
 }
+
 
 header h1 {
   margin: 0;
@@ -566,7 +567,7 @@ html {
   color: #0066cc;
   padding: 6px 14px;
   border-radius: 999px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -613,7 +614,7 @@ html {
 }
 
 .about-details p {
-  font-size: 12px;
+  font-size: 10px;
   color: #555;
 }
 
@@ -658,12 +659,12 @@ html {
 }
 
 .contact h3 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
 .contact p {
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 25px;
 }
 
@@ -680,55 +681,6 @@ html {
   margin-right: 0.5rem;
   font-size: 1.2rem;
   vertical-align: middle;
-}
-
-  .skills h3 {
-  font-size: 24px;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-
-.skill-category h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #3366ff;
-  text-align: left;
-}
-.timeline-section h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 40px;
-  color: #3366ff;
-}
-
-  .timeline-header h4 {
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-  font-weight: 600;
-}
-
-.timeline-header .org {
-  display: block;
-  font-size: 14px;
-  color: #777;
-  margin-top: 3px;
-}
-
-.timeline-header .date {
-  font-size: 14px;
-  color: #aaa;
-  font-style: italic;
-  margin-top: 2px;
-}
-
-.timeline-item ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  color: #444;
-  font-size: 12px;
-  line-height: 1.7;
 }
 
 }
