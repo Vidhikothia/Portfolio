@@ -685,4 +685,14 @@ html {
   vertical-align: middle;
 }
 
+.scroll-rocket {
+  position: fixed;
+  right: 15px;
+  bottom: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transform: rotate(135deg); /* Face down by default */
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
 }
