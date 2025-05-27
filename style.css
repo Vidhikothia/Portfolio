@@ -551,3 +551,15 @@ html {
     margin-top: 30px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    padding-right: 10px;
+  }
+}
