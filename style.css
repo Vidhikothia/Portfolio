@@ -78,6 +78,18 @@ nav a {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 10px;
+  }
+}
+
 .badge {
   display: inline-block;
   background-color: #e0f0ff;
