@@ -18,7 +18,7 @@ html {
 
 @media (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -581,14 +581,13 @@ html {
 }
 
 .download-resume {
-    font-size: 12px;
+  font-size: 12px;
   background-color: #3366ff;
   color: white;
 }
 
 .contact {
-    font-size: 12px;
-
+  font-size: 12px;
   color: #3366ff;
 }
 
@@ -655,18 +654,13 @@ html {
   margin-bottom: 15px;
 }
 
-.contact-container {
-  max-width: 800px;
-  margin: auto;
-}
-
 .contact h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 15px;
 }
 
 .contact p {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 25px;
 }
 
@@ -674,14 +668,14 @@ html {
   display: inline-block;
   margin: 0.5rem 1rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #333;
   transition: color 0.3s ease;
 }
 
 .contact-links a i {
   margin-right: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   vertical-align: middle;
 }
 
@@ -694,5 +688,64 @@ html {
   transform: rotate(135deg); /* Face down by default */
   z-index: 1000;
   transition: transform 0.3s ease;
+}
+
+  .timeline-section h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #3366ff;
+}
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+  border-left: 3px solid #3366ff;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.timeline-item::before {
+  content: none;
+  /* Removes the circular marker */
+}
+
+.timeline-header {
+  margin-bottom: 10px;
+}
+
+.timeline-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.timeline-header .org {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.timeline-header .date {
+  font-size: 14px;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.timeline-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+  font-size: 12px;
+  line-height: 1.7;
 }
 }
