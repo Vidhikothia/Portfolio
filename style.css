@@ -687,8 +687,8 @@ html {
 
 .scroll-rocket {
   position: fixed;
-  right: 15px;
-  bottom: 50px;
+  right: 20px;
+  bottom: 80px;
   font-size: 20px;
   cursor: pointer;
   transform: rotate(135deg); /* Face down by default */
