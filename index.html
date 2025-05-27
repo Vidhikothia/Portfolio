@@ -47,7 +47,7 @@
         <a href="https://drive.google.com/uc?export=download&id=1TSYqauLRddNjStXJLbSbsGf5cTOVzCmO" class="download-resume" download>Download Resume</a>
       </div>
     </div>
-<span id="scrollRocket" class="scroll-rocket">🚀</span>
+  <span id="scrollRocket" class="scroll-rocket">🚀</span>
   </section>
   <section id="about" class="about">
     <div class="about-container">
@@ -122,7 +122,7 @@
           <a href="https://github.com/Vidhikothia/KisanMitra" target="_blank">View Repo</a>
         </div>
         <div class="project-card">
-          <h4>EduMart - Book Reselling Platform</h4>
+          <h4>EduMart - Book Reselling Platform (C2C)</h4>
           <p>
             Developed a platform for students to list and resell books, enabling direct contact between buyers and
             sellers.
@@ -231,7 +231,7 @@
 
   <section id="contact" class="contact">
     <div class="contact-container">
-      <h3>✨Let’s connect & create magic!</h3>
+      <h3>✨Let’s connect & create magic!✨</h3>
       <p>Feel free to reach out and say hi...</p>
       <div class="contact-links">
         <a href="https://www.linkedin.com/in/vidhi-kothia-526901259/" target="_blank">
@@ -283,32 +283,30 @@
         behavior: 'smooth'  // smooth scrolling
       });
     });
-  const rocket = document.getElementById('scrollRocket');
-  let isScrolling = false;
-  rocket.addEventListener('click', () => {
-    isScrolling = true;
-    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    }
-  });
-  let scrollTimeout;
-  window.addEventListener('scroll', () => {
-    if (isScrolling) {
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 2;
-        const atTop = window.scrollY === 0;
-        if (atBottom) {
-          rocket.classList.add('up'); // face up at bottom
-        } else if (atTop) {
-          rocket.classList.remove('up'); // face down at top
-        }
-        isScrolling = false;
-      }, 200); // wait for scroll to finish
-    }
-  });
-</script>
+    </script>
+ <script>
+    const rocket = document.getElementById('scrollRocket');
+
+    rocket.addEventListener('click', () => {
+      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 2;
+      if (atBottom) {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
+      } else {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); // Scroll to bottom
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 2;
+      const atTop = window.scrollY === 0;
+
+      if (atBottom) {
+        rocket.classList.add('up');
+      } else if (atTop) {
+        rocket.classList.remove('up');
+      }
+    });
+  </script>
+
 </body>
 </html>
