@@ -748,4 +748,29 @@ html {
   font-size: 12px;
   line-height: 1.7;
 }
+
+  .skills h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3366ff;
+  text-align: left;
+}
+
+.skill-category ul li {
+  background-color: #f1f5ff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+}
 }
