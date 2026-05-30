@@ -237,6 +237,102 @@ transform:translateY(-4px) scale(1.02);
 box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
+/* DREAMBOOK */
+/* DREAMBOOK */
+
+.dreambook{
+background:#fafafa;
+}
+
+.dream-note{
+max-width:800px;
+margin:20px auto 60px;
+text-align:center;
+font-style:italic;
+color:#666;
+}
+
+.dream-grid{
+column-count:3;
+column-gap:24px;
+margin-top:50px;
+}
+
+.dream-card{
+background:white;
+padding:22px;
+margin-bottom:24px;
+border-radius:20px;
+break-inside:avoid;
+cursor:pointer;
+transition:.35s ease;
+border:1px solid #eee;
+}
+
+.dream-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.dream-card img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.dream-card h3{
+margin-bottom:10px;
+}
+
+.dream-card p{
+font-size:14px;
+color:#666;
+}
+
+.badge{
+display:inline-block;
+padding:6px 12px;
+border-radius:50px;
+font-size:12px;
+margin-bottom:12px;
+}
+
+.dreaming{
+background:#F3E8FF;
+color:#7E22CE;
+}
+
+.exploring{
+background:#DBEAFE;
+color:#1D4ED8;
+}
+
+.designing{
+background:#FEF3C7;
+color:#B45309;
+}
+
+.building{
+background:#DCFCE7;
+color:#15803D;
+}
+
+@media(max-width:900px){
+
+.dream-grid{
+column-count:2;
+}
+
+}
+
+@media(max-width:600px){
+
+.dream-grid{
+column-count:1;
+}
+
+}
+
 
 /* EXPERIENCE */
 
@@ -379,6 +475,7 @@ column-count:1;
 <li><a href="#about">About</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#gallery">Gallery</a></li>
+<li><a href="#dreambook">Dreambook</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -508,6 +605,121 @@ Posters • Branding • Social Media • Campaigns • Travel Design
 <img src="design8.jpg" onclick="openImg(this.src)">
 <img src="design9.jpg" onclick="openImg(this.src)">
 <img src="design7.jpg" onclick="openImg(this.src)">
+
+</div>
+
+</section>
+
+<section id="dreambook" class="dreambook">
+
+<h2 class="heading">Dreambook</h2>
+
+<p class="sub">
+A collection of ideas, places, experiences and worlds I hope to bring to life someday.
+</p>
+
+<p class="dream-note">
+"Not every dream needs to become reality.
+Some exist simply because imagining them makes life more interesting."
+</p>
+
+<div class="dream-grid">
+
+<div class="dream-card">
+
+<span class="badge dreaming">
+💭 Dreaming
+</span>
+
+<img src="shellhouse.jpg">
+
+<h3>🐚 The Shell House</h3>
+
+<p>
+An ocean-inspired world built around the beauty of shells.
+</p>
+
+</div>
+
+<div class="dream-card">
+
+<span class="badge dreaming">
+💭 Dreaming
+</span>
+
+<img src="leafhouse.jpg">
+
+<h3>🍃 The Leaf House</h3>
+
+<p>
+A space celebrating the overlooked beauty of leaves and forests.
+</p>
+
+</div>
+
+<div class="dream-card">
+
+<span class="badge dreaming">
+💭 Dreaming
+</span>
+
+<img src="rockhouse.jpg">
+
+<h3>🪨 The Rock House</h3>
+
+<p>
+A mountain-inspired experience centered around stone, time and permanence.
+</p>
+
+</div>
+
+<div class="dream-card">
+
+<span class="badge exploring">
+🔍 Exploring
+</span>
+
+<img src="discoveryroom.jpg">
+
+<h3>🌌 Discovery Room</h3>
+
+<p>
+A place where curiosity becomes the product.
+</p>
+
+</div>
+
+<div class="dream-card">
+
+<span class="badge designing">
+✏️ Designing
+</span>
+
+<img src="mindfulescape.jpg">
+
+<h3>🌿 Mindful Escape</h3>
+
+<p>
+A retreat built around intentional living and deep thinking.
+</p>
+
+</div>
+
+<div class="dream-card">
+
+<span class="badge dreaming">
+💭 Dreaming
+</span>
+
+<img src="bookhouse.jpg">
+
+<h3>📚 The Book House</h3>
+
+<p>
+A home for stories, ideas, readers and quiet wonder.
+</p>
+
+</div>
 
 </div>
 
